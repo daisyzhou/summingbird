@@ -33,7 +33,7 @@ import com.twitter.summingbird.batch.{ BatchID, Batcher}
 
 /**
  * DirectoryBatched Scalding Store, which only contains (K, V) data pairs in the data.
- * Batch information is presented in directory pathes.
+ * Batch information is presented in directory paths.
  *
  * @author Kevin Lin
  */

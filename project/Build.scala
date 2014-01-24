@@ -256,5 +256,5 @@ object SummingbirdBuild extends Build {
       "com.twitter" %% "tormenta-twitter" % tormentaVersion,
       "com.twitter" %% "storehaus-memcache" % storehausVersion
     )
-  ).dependsOn(summingbirdCore, summingbirdStorm)
+  ).dependsOn(summingbirdCore, summingbirdStorm, summingbirdScalding)
 }
