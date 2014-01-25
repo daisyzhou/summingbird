@@ -28,12 +28,12 @@ import com.twitter.util.Await
 import twitter4j.TwitterStreamFactory
 import twitter4j.conf.ConfigurationBuilder
 
-
-object ExeStorm {
-  def main(args: Array[String]) {
-    Executor(args, StormRunner(_))
-  }
-}
+//
+//object ExeStorm {
+//  def main(args: Array[String]) {
+//    Executor(args, StormRunner(_))
+//  }
+//}
 
 /**
   * The following object contains code to execute the Summingbird

@@ -30,8 +30,8 @@ object ScaldingRunner {
   val mode = Hdfs(false, new Configuration())
 
   val source = Producer.source[Scalding, String](Scalding.pipeFactoryExact(_ => TextLine(jobDir + "/input.txt")))
-  val store = new InitialBatchedStore(batcher.currentBatch - 2L, versionedStore)
   val versionedStore: VersionedBatchStore[String, Long, String, (BatchID, Long)] = VersionedStore[String, Long](jobDir + "/store")
+  val store = new InitialBatchedStore(batcher.currentBatch - 2L, versionedStore)
 
   def apply(args: Args): ScaldingExecutionConfig = {
     new ScaldingExecutionConfig {
